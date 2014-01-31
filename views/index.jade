@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each vuln in vulns
+      li #{vuln.n.data.cpe}: #{vuln.m.data.cve}
